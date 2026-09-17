@@ -1,0 +1,27 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-collection-product",
+      "settings": {
+        "container": "container-fluid",
+        "products_column": 4,
+        "number_products_grid": 24,
+        "pagination": "load_more",
+        "product_sort_options": true,
+        "enable_sidebar": true
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

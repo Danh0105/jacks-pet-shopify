@@ -1,0 +1,110 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "jpc_homepage": {
+      "type": "jpc-homepage",
+      "settings": {}
+    },
+    "jpc_value_stories": {
+      "type": "jpc-value-stories",
+      "blocks": {
+        "story_1": {
+          "type": "story",
+          "settings": {
+            "initials": "01",
+            "title": "Clear product details",
+            "label": "A better shopping experience",
+            "quote": "We aim to make it easier to understand your options and choose supplies that fit your pet’s routine."
+          }
+        },
+        "story_2": {
+          "type": "story",
+          "settings": {
+            "initials": "02",
+            "title": "Practical essentials",
+            "label": "Built for everyday care",
+            "quote": "Useful products and straightforward guidance can make everyday pet care feel less complicated."
+          }
+        },
+        "story_3": {
+          "type": "story",
+          "settings": {
+            "initials": "03",
+            "title": "Local connection",
+            "label": "Great Falls, Montana",
+            "quote": "Our goal is to keep pet care personal, approachable, and connected to the community we serve."
+          }
+        },
+        "story_4": {
+          "type": "story",
+          "settings": {
+            "initials": "04",
+            "title": "Support when you need it",
+            "label": "Here to help",
+            "quote": "Questions about an order, product, or policy are welcome—our support team is ready to help."
+          }
+        },
+        "story_5": {
+          "type": "story",
+          "settings": {
+            "initials": "05",
+            "title": "Clear delivery expectations",
+            "label": "Shop with confidence",
+            "quote": "We publish shipping information clearly so you know what to expect before checkout."
+          }
+        },
+        "story_6": {
+          "type": "story",
+          "settings": {
+            "initials": "06",
+            "title": "Responsible care",
+            "label": "Pets come first",
+            "quote": "We encourage thoughtful product choices and recommend qualified veterinary care for health concerns."
+          }
+        }
+      },
+      "block_order": [
+        "story_1",
+        "story_2",
+        "story_3",
+        "story_4",
+        "story_5",
+        "story_6"
+      ],
+      "settings": {
+        "heading_primary": "What Pet Parents",
+        "heading_secondary": "Value Most",
+        "description": "Thoughtful supplies, clear information, and a customer experience built around everyday pet care."
+      }
+    },
+    "google_map_bX4bej": {
+      "type": "google-map",
+      "name": "t:sections.google-maps.name",
+      "settings": {
+        "heading": "",
+        "heading_border": false,
+        "description": "",
+        "text_alignment": "text-center",
+        "container": "full-width",
+        "color_scheme": "",
+        "iframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3316.3944220376748!2d-111.2983708!3d47.5049414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x534237ed0f99f035%3A0xebc79e9fc27d1e2a!2sJacks%20Pet%20Center!5e1!3m2!1svi!2s!4v1788846401654!5m2!1svi!2s\" width=\"100%\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"strict-origin-when-cross-origin\"></iframe>",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "reset_spacing": true
+      }
+    }
+  },
+  "order": [
+    "jpc_homepage",
+    "jpc_value_stories",
+    "google_map_bX4bej"
+  ]
+}

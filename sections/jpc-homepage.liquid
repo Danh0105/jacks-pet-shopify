@@ -1,0 +1,118 @@
+<main class="jpc-homepage">
+  <section class="jpc-hero">
+    <div class="jpc-container jpc-hero__grid">
+      <div class="jpc-hero__copy">
+        <p class="jpc-eyebrow">Local pet care • Great Falls, Montana</p>
+        <h1>Everything your pet needs, with care you can trust.</h1>
+        <p>Shop practical pet supplies and find straightforward guidance for happier, healthier everyday routines.</p>
+        <div class="jpc-hero__actions">
+          <a class="jpc-button jpc-button--navy" href="{{ routes.all_products_collection_url }}">Shop pet essentials <span aria-hidden="true">↗</span></a>
+          <a class="jpc-text-link" href="/pages/about">Our story <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+      <div class="jpc-hero__visual">
+        <img src="{{ 'jacks-pet-care-animals.jpg' | asset_url }}" alt="A dog and cat enjoying time together" width="2304" height="1536" loading="eager">
+        <div class="jpc-hero__badge"><strong>$79+</strong><span>free standard shipping</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="jpc-trust-strip" aria-label="Store benefits">
+    <div class="jpc-container jpc-trust-strip__grid">
+      <div><strong>Free shipping</strong><span>Eligible U.S. orders over $79</span></div>
+      <div><strong>Shopify Payments</strong><span>Secure checkout experience</span></div>
+      <div><strong>Local support</strong><span>Great Falls, Montana</span></div>
+      <div><strong>Practical guidance</strong><span>Care advice without the clutter</span></div>
+    </div>
+  </section>
+
+  <section class="jpc-section jpc-section--cream">
+    <div class="jpc-container jpc-story-grid">
+      <div class="jpc-story-grid__image"><img src="{{ 'jacks-pet-supplies-flatlay.jpg' | asset_url }}" alt="Pet care supplies arranged on a table" width="2176" height="1632" loading="lazy"></div>
+      <div class="jpc-story-grid__copy">
+        <p class="jpc-eyebrow">A local store with Montana roots</p>
+        <h2>Good pet care starts with the everyday details.</h2>
+        <p>Jack’s Pet Center is built around a simple idea: choosing supplies for your pet should feel clear, personal, and practical. We bring together everyday essentials, helpful information, and a local customer-support experience.</p>
+        <p>Whether you are welcoming a new companion, refreshing your routine, or looking for a better fit, we are here to help you make an informed choice.</p>
+        <a class="jpc-text-link" href="/pages/about">Learn about Jack’s Pet Center <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="jpc-section">
+    <div class="jpc-container">
+      <div class="jpc-section-heading"><div><p class="jpc-eyebrow">Shop by need</p><h2>Pet-care essentials, made easier.</h2></div><a class="jpc-text-link" href="{{ routes.all_products_collection_url }}">View all products <span aria-hidden="true">→</span></a></div>
+      <div class="jpc-category-grid">
+        {% assign category_handles = 'dog-supplies,cat-supplies,pet-food-treats,toys-and-enrichment,grooming-and-care' | split: ',' %}
+        {% assign category_names = 'Dog Supplies,Cat Supplies,Food & Treats,Toys & Enrichment,Grooming & Care' | split: ',' %}
+        {% for handle in category_handles %}
+          {% assign category = collections[handle] %}
+          <a class="jpc-category-card" href="{% if category != blank %}{{ category.url }}{% else %}{{ routes.all_products_collection_url }}{% endif %}">
+            <span class="jpc-category-card__number">0{{ forloop.index }}</span>
+            <div class="jpc-category-card__image">
+              {% case forloop.index %}
+                {% when 1 %}<img src="{{ 'jpc-category-dog-supplies.jpg' | asset_url }}" alt="Dog supplies" loading="lazy">
+                {% when 2 %}<img src="{{ 'jpc-category-cat-supplies.jpg' | asset_url }}" alt="Cat supplies" loading="lazy">
+                {% when 3 %}<img src="{{ 'jpc-category-food-treats.jpg' | asset_url }}" alt="Pet food and treats" loading="lazy">
+                {% when 4 %}<img src="{{ 'jpc-category-toys.jpg' | asset_url }}" alt="Pet toys and enrichment" loading="lazy">
+                {% when 5 %}<img src="{{ 'jpc-category-grooming.jpg' | asset_url }}" alt="Pet grooming and care" loading="lazy">
+              {% endcase %}
+            </div>
+            <h3>{{ category_names[forloop.index0] }}</h3><span class="jpc-category-card__arrow">↗</span>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="jpc-section jpc-section--navy">
+    <div class="jpc-container">
+      <div class="jpc-section-heading jpc-section-heading--light"><div><p class="jpc-eyebrow">Featured care</p><h2>Everyday favorites for your routine.</h2></div><a class="jpc-text-link jpc-text-link--light" href="{{ routes.all_products_collection_url }}">Shop all <span aria-hidden="true">→</span></a></div>
+      {% assign featured_collection = collections['frontpage'] %}
+      {% if featured_collection == blank %}{% assign featured_collection = collections['all'] %}{% endif %}
+      <div class="jpc-product-grid">
+        {% if featured_collection != blank and featured_collection.products_count > 0 %}
+          {% for product in featured_collection.products limit: 4 %}
+            <div class="jpc-product-card-wrap">{% render 'product-item', product: product %}</div>
+          {% endfor %}
+        {% else %}
+          <div class="jpc-empty-products"><p class="jpc-eyebrow">Your product collection will appear here</p><h3>Connect a featured collection in Shopify to start selling.</h3><a class="jpc-button jpc-button--gold" href="{{ routes.all_products_collection_url }}">Browse the shop</a></div>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+
+  <section class="jpc-section jpc-section--cream jpc-process-section">
+    <div class="jpc-container">
+      <div class="jpc-centered-heading"><p class="jpc-eyebrow">Our process</p><h2>Simple choices. Better routines.</h2><p>From choosing everyday essentials to receiving your order, here’s how it works.</p></div>
+      <div class="jpc-process-cards">
+        <div class="jpc-process-card"><span class="jpc-process-card__icon">✦</span><h3>Browse with purpose</h3><p>Explore clear categories built around the real needs of dogs, cats, and their people.</p></div>
+        <div class="jpc-process-card"><span class="jpc-process-card__icon">✓</span><h3>Choose with confidence</h3><p>Review product details and select supplies that fit your pet’s everyday routine.</p></div>
+        <div class="jpc-process-card"><span class="jpc-process-card__icon">□</span><h3>Checkout securely</h3><p>Shop through Shopify’s secure checkout and receive order updates along the way.</p></div>
+        <div class="jpc-process-card"><span class="jpc-process-card__icon">→</span><h3>Care with consistency</h3><p>Build practical routines with products and guidance designed for real life.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="jpc-section jpc-why-section">
+    <div class="jpc-container">
+      <div class="jpc-why-heading"><div><p class="jpc-eyebrow">Why pet parents choose us</p><h2>Useful products. Thoughtful service. Less guesswork.</h2></div><p>We focus on the details that make everyday pet care feel easier, from dependable information to a customer experience you can reach when you need it.</p></div>
+      <div class="jpc-why-grid">
+        <article class="jpc-why-card"><img src="{{ 'jpc-trust-quality.jpg' | asset_url }}" alt="Dog receiving gentle care" loading="lazy"><div><h3>Care-first choices</h3><p>We aim to present practical products clearly so you can make an informed decision.</p></div></article>
+        <article class="jpc-why-card"><img src="{{ 'jpc-trust-eco.jpg' | asset_url }}" alt="Pet supplies with reusable materials" loading="lazy"><div><h3>Thoughtful essentials</h3><p>We look for useful supplies that support comfortable, well-organized routines.</p></div></article>
+        <article class="jpc-why-card"><img src="{{ 'jpc-trust-community.jpg' | asset_url }}" alt="Pet parent holding a small dog" loading="lazy"><div><h3>Local connection</h3><p>Our Great Falls roots keep the experience personal, approachable, and community-minded.</p></div></article>
+        <article class="jpc-why-card"><img src="{{ 'jpc-trust-delivery.jpg' | asset_url }}" alt="Pet supplies being delivered" loading="lazy"><div><h3>Clear delivery expectations</h3><p>We publish shipping terms and order information clearly before you complete checkout.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="jpc-section jpc-section--cream jpc-faq-preview">
+    <div class="jpc-container jpc-faq-grid"><div><p class="jpc-eyebrow">Need to know</p><h2>Questions before you shop?</h2><p>Find answers about shipping, returns, payments, and contacting our team.</p><a class="jpc-button jpc-button--navy" href="/pages/faq">Visit FAQs <span aria-hidden="true">↗</span></a></div><div class="jpc-faq-list"><details open><summary>How much is shipping?</summary><p>Standard shipping is $4.90. Eligible U.S. orders of $79 or more receive free standard shipping through the live Shopify checkout.</p></details><details><summary>How long does delivery take?</summary><p>Orders are normally processed in 1–3 business days, followed by an estimated 5–10 business days in transit.</p></details><details><summary>How do I contact Jack’s Pet Center?</summary><p>Email support@jackspetcenter.com or call (406) 453-1821 during our support hours.</p></details></div></div>
+  </section>
+</main>
+{% schema %}
+{
+  "name": "Jacks Pet Center homepage",
+  "settings": []
+}
+{% endschema %}

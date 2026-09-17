@@ -1,0 +1,336 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumb": {
+      "type": "breadcrumb",
+      "settings": {
+        "container": "container-fluid",
+        "color_scheme": "",
+        "postion": "text-left",
+        "next_prev": true
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "4fb992c4-abd8-4a65-a790-09cd83721e45": {
+          "type": "product_label",
+          "settings": {}
+        },
+        "82f7102f-e1b6-4eb3-89b7-ee189edc5f76": {
+          "type": "product_title",
+          "settings": {
+            "font_size": 30
+          }
+        },
+        "836d9723-358d-4023-88a8-2d3b5907093e": {
+          "type": "review_sold",
+          "settings": {
+            "show_review": false,
+            "show_sold_product": true,
+            "sold": "8,10,12,15,17,22",
+            "hours": "10,12,15,16,17,18,20,24"
+          }
+        },
+        "7d760b32-e8e4-42d9-8998-91d6fb23aaef": {
+          "type": "product_price",
+          "settings": {}
+        },
+        "dbd063d5-9b87-45d4-9984-deb077fa0e85": {
+          "type": "short_description",
+          "settings": {
+            "length": 31
+          }
+        },
+        "66e6994c-2a75-4723-a6a4-d69ac368f716": {
+          "type": "visitors",
+          "settings": {
+            "count_text": "[count_number] people are viewing this right now",
+            "count_range_max": 30,
+            "count_range_min": 10,
+            "view_duration": 10
+          }
+        },
+        "39f14f5e-3cc5-4645-a921-f071b109d244": {
+          "type": "countdown_timer",
+          "settings": {
+            "show_countdown_timer": true,
+            "message": "Hurry Up! Sale ends in:"
+          }
+        },
+        "3870a5bb-fec0-4b82-9405-e324077ed947": {
+          "type": "product_swatch",
+          "settings": {}
+        },
+        "product_custom_field_DyrrPn": {
+          "type": "product_custom_field",
+          "disabled": true,
+          "settings": {
+            "field_type": "text",
+            "field_name": "Your Device Name"
+          }
+        },
+        "37f20969-8bae-47ff-89e1-b0be3169e19a": {
+          "type": "product_form",
+          "settings": {
+            "button_animation": "flash-move",
+            "show_buy_now": true,
+            "show_gift_card_recipient": true,
+            "label_quantity_product_information": false
+          }
+        },
+        "062f7cd6-1265-4c29-a22c-e2bbebc5f2b6": {
+          "type": "product_addons",
+          "settings": {
+            "size_chart": "1",
+            "type_size_chart": "2",
+            "page": "size-guide",
+            "text": "<h4>What iPhone Do I Have?</h4><h5>Check out your \"Settings\"</h5><p>Go to Settings &gt; General &gt; About. Then look to the right of \"Model Name\".</p>",
+            "show_compare_color": true,
+            "show_ask": true,
+            "show_share": true
+          }
+        },
+        "e5cf937e-e30a-4b9a-93c1-f48c229054f3": {
+          "type": "product_custom_field",
+          "disabled": true,
+          "settings": {
+            "field_type": "text",
+            "field_name": "Customize note"
+          }
+        },
+        "b328bd75-b508-4fed-84c2-6727ff481d16": {
+          "type": "product_custom_field",
+          "disabled": true,
+          "settings": {
+            "field_type": "image",
+            "field_name": "Upload image"
+          }
+        },
+        "f98b666a-7c37-41ed-be7b-4a28f4a1e8b4": {
+          "type": "stock_countdown",
+          "settings": {
+            "message": "Hurry Up! Only [count] left in stock!",
+            "qty": 100
+          }
+        },
+        "custom_liquid_rXiri8": {
+          "type": "custom_liquid",
+          "settings": {
+            "content": "<style>\n.trustscore-container {\n  display: flex;\n  align-items: center;\n  font-family: Arial, sans-serif;\n  font-size: 14px;\n  color: #333;\n}\n\n.stars {\n  display: flex;\n  align-items: center;\n  margin-right: 10px;\n}\n\n.stars img {\n  max-width: 100px;\n  width: 100px;\n  height: auto;\n}\n\n.trustscore {\n  font-weight: normal;\n}\n\n.highlight {\n  font-weight: bold;\n}\n\n.reviews {\n  font-weight: normal;\n  margin-left: 5px;\n}\n</style>\n</head>\n<body>\n<div class=\"trustscore-container\">\n  <div class=\"stars\">\n    <!-- Embedding the PNG image from Imgur -->\n    <img src=\"https://i.imgur.com/EHjNmTM.png\" alt=\"5 stars\">\n  </div>\n  <div class=\"trustscore\">\n    Trustscore <span class=\"highlight\">4.9 | 14,500+</span> reviews\n  </div>\n</div>\n</body>\n</html>"
+          }
+        },
+        "product_group_DebTpa": {
+          "type": "product_group",
+          "settings": {}
+        },
+        "fb4d791a-e332-4dc8-b188-114a9e802869": {
+          "type": "pickup_availability",
+          "settings": {}
+        },
+        "c772ce81-4aa5-415d-8939-631c6d4897ff": {
+          "type": "delivery_return",
+          "settings": {
+            "show_delivery": true,
+            "delivery_text": "<p>Estimate delivery times: <strong>6-13 days</strong> (United States), <strong>10-20 days</strong> (International).</p>",
+            "show_return": true,
+            "return_text": "<p>Return within <strong>30 days</strong> of purchase. Duties & taxes are non-refundable.</p>"
+          }
+        },
+        "84ae25d8-caaa-414c-b983-91812f8c5046": {
+          "type": "product_meta",
+          "settings": {
+            "show_vendors": false,
+            "show_available": true,
+            "show_sku": true,
+            "show_barcode": false,
+            "show_type": true,
+            "show_collection": true
+          }
+        },
+        "e3c98e10-4e94-4a55-bf4e-364e68cbe829": {
+          "type": "trust_badge",
+          "settings": {
+            "heading": "",
+            "image": "shopify://shop_images/Guaranteed-Safe-Checkout-Banner-PNG-Transparent-Image.png",
+            "image_width": 400,
+            "position": "above"
+          }
+        }
+      },
+      "block_order": [
+        "4fb992c4-abd8-4a65-a790-09cd83721e45",
+        "82f7102f-e1b6-4eb3-89b7-ee189edc5f76",
+        "836d9723-358d-4023-88a8-2d3b5907093e",
+        "7d760b32-e8e4-42d9-8998-91d6fb23aaef",
+        "dbd063d5-9b87-45d4-9984-deb077fa0e85",
+        "66e6994c-2a75-4723-a6a4-d69ac368f716",
+        "39f14f5e-3cc5-4645-a921-f071b109d244",
+        "3870a5bb-fec0-4b82-9405-e324077ed947",
+        "product_custom_field_DyrrPn",
+        "37f20969-8bae-47ff-89e1-b0be3169e19a",
+        "062f7cd6-1265-4c29-a22c-e2bbebc5f2b6",
+        "e5cf937e-e30a-4b9a-93c1-f48c229054f3",
+        "b328bd75-b508-4fed-84c2-6727ff481d16",
+        "f98b666a-7c37-41ed-be7b-4a28f4a1e8b4",
+        "custom_liquid_rXiri8",
+        "product_group_DebTpa",
+        "fb4d791a-e332-4dc8-b188-114a9e802869",
+        "c772ce81-4aa5-415d-8939-631c6d4897ff",
+        "84ae25d8-caaa-414c-b983-91812f8c5046",
+        "e3c98e10-4e94-4a55-bf4e-364e68cbe829"
+      ],
+      "settings": {
+        "container": "container-fluid",
+        "design": "thumbnails-left",
+        "product_loading_effect": false,
+        "sticky_product_information": true,
+        "image_action": "show_zoom_hover",
+        "zoom_type": "inner-2",
+        "hidden_zoom_mobile": false,
+        "enable_video_looping": false,
+        "thumbnails_mobile": "1",
+        "use_variants_group": true,
+        "swatch_size": "medium",
+        "bought_together": true,
+        "sticky": true,
+        "sticky_mode": "2"
+      }
+    },
+    "information-tabs": {
+      "type": "product-information-tabs",
+      "blocks": {
+        "5ff6a4f5-c591-4a3f-bb68-b1efa1c91ab5": {
+          "type": "description",
+          "settings": {
+            "title": "Description"
+          }
+        }
+      },
+      "block_order": [
+        "5ff6a4f5-c591-4a3f-bb68-b1efa1c91ab5"
+      ],
+      "settings": {
+        "container": "container-fluid",
+        "color_scheme": "",
+        "design": "accordition",
+        "position": "2",
+        "open_first_tab": false,
+        "show_two_column": false,
+        "custom_class": "",
+        "reset_spacing": false
+      }
+    },
+    "product-sidebar": {
+      "type": "product-sidebar",
+      "blocks": {
+        "categories": {
+          "type": "categories",
+          "settings": {
+            "title": "Products category",
+            "menu": ""
+          }
+        },
+        "instagram_mAHqi9": {
+          "type": "instagram",
+          "settings": {
+            "title": "Instagram",
+            "ig_ac": "IGQWRPU09zUGpFMktkZAktnQnE4UUNNYUdQVmJ1UnVBanVyMm1WSzZA2YVFZAT0h6MjVkVU43eVN6MDloWjhhRUVXbl8xT1k2b3RYQkdtT1h4U2ttdGVPMTRsY0hvbzE2aUMtcnFHSTJURXpmMlpCMkRVNm8wZAzRySGMZD",
+            "ig_num_imgs": 9,
+            "space_column": 5
+          }
+        }
+      },
+      "block_order": [
+        "categories",
+        "instagram_mAHqi9"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable_sidebar": false,
+        "sidebar_layout": "left"
+      }
+    },
+    "b85c568e-3b8d-48c8-ac89-c45b5bb72dc6": {
+      "type": "products-recently-viewed",
+      "settings": {
+        "heading": "Recently Viewed",
+        "heading_border": false,
+        "description": "<p>Don't forget! The products that you viewed. Add it to cart now.</p>",
+        "text_alignment": "text-center",
+        "container": "container-fluid",
+        "color_scheme": "",
+        "limit_products": 6,
+        "item_desktop": 4,
+        "column_gap": 30,
+        "carousel_autoplay": false,
+        "carousel_loop": false,
+        "carousel_arrows": true,
+        "carousel_pagination": "carousel_none",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
+    },
+    "product-complementary": {
+      "type": "product-complementary",
+      "disabled": true,
+      "settings": {
+        "heading": "Pairs well with",
+        "heading_border": true,
+        "description": "<p>Enhance your selection with perfectly matched accessories and complementary products..</p>",
+        "text_alignment": "text-center",
+        "container": "container-fluid",
+        "product_recommendations_background_color": "#ffffff",
+        "limit_products": 4,
+        "item_desktop": 4,
+        "column_gap": 30,
+        "carousel_autoplay": false,
+        "carousel_loop": false,
+        "carousel_arrows": true,
+        "carousel_pagination": "carousel_none",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "People Also Bought",
+        "heading_border": false,
+        "description": "<p>Here’s some of our most similar products people are buying. Click to discover trending style.</p>",
+        "text_alignment": "text-center",
+        "container": "container-fluid",
+        "product_recommendations_background_color": "#ffffff",
+        "limit_products": 4,
+        "item_desktop": 4,
+        "column_gap": 30,
+        "carousel_autoplay": false,
+        "carousel_loop": false,
+        "carousel_arrows": true,
+        "carousel_pagination": "carousel_none",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
+    }
+  },
+  "order": [
+    "breadcrumb",
+    "main",
+    "information-tabs",
+    "product-sidebar",
+    "b85c568e-3b8d-48c8-ac89-c45b5bb72dc6",
+    "product-complementary",
+    "product-recommendations"
+  ]
+}

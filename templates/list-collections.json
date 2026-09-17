@@ -1,0 +1,245 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-list-collections",
+      "blocks": {
+        "collection_3RAbcG": {
+          "type": "collection",
+          "settings": {
+            "title_collection": "",
+            "collection": "one-punch-man-silicone-armored-phone-cases"
+          }
+        },
+        "collection_U9ETR7": {
+          "type": "collection",
+          "settings": {
+            "title_collection": "",
+            "collection": "one-piece-silicone-armored-phone-cases"
+          }
+        },
+        "collection_rJYdCV": {
+          "type": "collection",
+          "settings": {
+            "title_collection": "",
+            "collection": "naruto-silicone-armored-phone-cases"
+          }
+        },
+        "collection_badPgw": {
+          "type": "collection",
+          "settings": {
+            "title_collection": "",
+            "collection": "jujutsu-kaisen-silicone-armored-phone-cases"
+          }
+        },
+        "collection_N6WDbw": {
+          "type": "collection",
+          "settings": {
+            "title_collection": "",
+            "collection": "dragon-ball-silicone-armored-phone-cases"
+          }
+        },
+        "collection_jJifft": {
+          "type": "collection",
+          "settings": {
+            "title_collection": "",
+            "collection": "demon-slayer-silicone-armored-phone-cases"
+          }
+        },
+        "collection_MaQmRL": {
+          "type": "collection",
+          "settings": {
+            "title_collection": "",
+            "collection": "death-note-silicone-armored-phone-cases"
+          }
+        },
+        "collection_Bdw7Ap": {
+          "type": "collection",
+          "settings": {
+            "title_collection": "",
+            "collection": "attack-on-titan-silicone-armored-phone-cases"
+          }
+        },
+        "collection_J3UmgA": {
+          "type": "collection",
+          "settings": {
+            "title_collection": "",
+            "collection": "bleach-silicone-armored-phone-cases"
+          }
+        },
+        "collection_LNnxwz": {
+          "type": "collection",
+          "settings": {
+            "title_collection": "",
+            "collection": "one-punch-man-matte-phone-covers"
+          }
+        },
+        "collection_wH4Kx8": {
+          "type": "collection",
+          "settings": {
+            "title_collection": "",
+            "collection": "one-piece-matte-phone-covers"
+          }
+        },
+        "collection_GDHLhH": {
+          "type": "collection",
+          "settings": {
+            "title_collection": "",
+            "collection": "naruto-matte-phone-covers"
+          }
+        },
+        "collection_QCttLp": {
+          "type": "collection",
+          "settings": {
+            "title_collection": "",
+            "collection": "jujutsu-kaisen-matte-phone-covers"
+          }
+        },
+        "collection_xbfjyF": {
+          "type": "collection",
+          "settings": {
+            "title_collection": "",
+            "collection": "dragon-ball-matte-phone-covers"
+          }
+        },
+        "collection_hmNLkk": {
+          "type": "collection",
+          "settings": {
+            "title_collection": "",
+            "collection": "demon-slayer-matte-phone-covers"
+          }
+        },
+        "collection_3qtFbH": {
+          "type": "collection",
+          "settings": {
+            "title_collection": "",
+            "collection": "death-note-matte-phone-covers"
+          }
+        },
+        "collection_3t6cwn": {
+          "type": "collection",
+          "settings": {
+            "title_collection": "",
+            "collection": "bleach-matte-phone-covers"
+          }
+        },
+        "collection_bJWGgD": {
+          "type": "collection",
+          "settings": {
+            "title_collection": "",
+            "collection": "attack-on-titan-matte-phone-covers"
+          }
+        },
+        "collection_ktqzm6": {
+          "type": "collection",
+          "settings": {
+            "title_collection": "",
+            "collection": "anime-jewelry"
+          }
+        },
+        "collection_4mERFQ": {
+          "type": "collection",
+          "settings": {
+            "title_collection": "",
+            "collection": "3d-matte-phone-covers"
+          }
+        },
+        "collection_A6NFpH": {
+          "type": "collection",
+          "settings": {
+            "title_collection": "",
+            "collection": "silicone-armored-phone-cases"
+          }
+        },
+        "collection_QDFXWq": {
+          "type": "collection",
+          "settings": {
+            "title_collection": "",
+            "collection": "solo-leveling-matte-phone-covers"
+          }
+        },
+        "collection_pRKpfK": {
+          "type": "collection",
+          "settings": {
+            "title_collection": "",
+            "collection": "solo-leveling-silicone-armored-phone-cases"
+          }
+        },
+        "collection_bnHtxw": {
+          "type": "collection",
+          "settings": {
+            "title_collection": "",
+            "collection": "anime-phone-cases"
+          }
+        }
+      },
+      "block_order": [
+        "collection_3RAbcG",
+        "collection_U9ETR7",
+        "collection_rJYdCV",
+        "collection_badPgw",
+        "collection_N6WDbw",
+        "collection_jJifft",
+        "collection_MaQmRL",
+        "collection_Bdw7Ap",
+        "collection_J3UmgA",
+        "collection_LNnxwz",
+        "collection_wH4Kx8",
+        "collection_GDHLhH",
+        "collection_QCttLp",
+        "collection_xbfjyF",
+        "collection_hmNLkk",
+        "collection_3qtFbH",
+        "collection_3t6cwn",
+        "collection_bJWGgD",
+        "collection_ktqzm6",
+        "collection_4mERFQ",
+        "collection_A6NFpH",
+        "collection_QDFXWq",
+        "collection_pRKpfK",
+        "collection_bnHtxw"
+      ],
+      "settings": {
+        "container": "container-fluid",
+        "title": "All collections",
+        "des_collection": "",
+        "type": "custom",
+        "sort": "alphabetical",
+        "layout": "layout-1",
+        "hover_effect": "zoom",
+        "image_ratio": "custom",
+        "custom_ratio": "100:118",
+        "show_count_product": true,
+        "columns_desktop": 4,
+        "show_button": true,
+        "btn_text": "Shop now",
+        "show_description": true,
+        "limit_content_des": 25,
+        "column_gap": 30,
+        "collection_infinite_scroll": true,
+        "collection_limit": 18,
+        "button_show_more": "Show more collections"
+      }
+    },
+    "spacing_mhtFkT": {
+      "type": "spacing",
+      "name": "t:sections.spacing.name",
+      "settings": {
+        "spacing_desktop": 30,
+        "spacing_moible": 30
+      }
+    }
+  },
+  "order": [
+    "main",
+    "spacing_mhtFkT"
+  ]
+}

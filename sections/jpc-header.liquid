@@ -1,0 +1,46 @@
+<div class="jpc-announcement" role="region" aria-label="Store announcement">
+  <div class="jpc-container jpc-announcement__inner">
+    <span>Free standard shipping on eligible U.S. orders over $79</span>
+    <span class="jpc-announcement__detail">Local pet care • Great Falls, Montana</span>
+  </div>
+</div>
+<header class="jpc-site-header" data-jpc-header>
+  <div class="jpc-container jpc-site-header__inner">
+    <button class="jpc-menu-toggle" type="button" aria-expanded="false" aria-controls="jpc-mobile-menu" data-jpc-menu-toggle>
+      <span class="visually-hidden">Open menu</span>
+      <span></span><span></span><span></span>
+    </button>
+    <a class="jpc-logo" href="{{ routes.root_url }}" aria-label="Jack’s Pet Center home">
+      <img src="{{ 'jacks-pet-center-logo.png' | asset_url }}" alt="Jack’s Pet Center" width="240" height="135">
+    </a>
+    <nav class="jpc-nav" aria-label="Primary navigation">
+      <a href="{{ routes.root_url }}">Home</a>
+      <a href="/pages/about">About Us</a>
+      <a href="{{ routes.all_products_collection_url }}">Shop</a>
+      <a href="/pages/contact">Contact</a>
+      <a href="/pages/faq">FAQ</a>
+    </nav>
+    <div class="jpc-actions">
+      <a href="{{ routes.search_url }}" aria-label="Search">{% render 'icon', icon: 'search' %}</a>
+      <a href="{{ routes.account_url }}" aria-label="Account">{% render 'icon', icon: 'account' %}</a>
+      <a href="{{ routes.cart_url }}" aria-label="Cart" class="jpc-cart-link">{% render 'icon', icon: 'cart' %}<span class="jpc-cart-count">{{ cart.item_count }}</span></a>
+    </div>
+  </div>
+  <div id="jpc-mobile-menu" class="jpc-mobile-menu" hidden>
+    <nav aria-label="Mobile navigation">
+      <a href="{{ routes.root_url }}">Home</a>
+      <a href="/pages/about">About Us</a>
+      <a href="{{ routes.all_products_collection_url }}">Shop</a>
+      <a href="/pages/contact">Contact</a>
+      <a href="/pages/faq">FAQ</a>
+    </nav>
+    <p>508 Central Ave, Great Falls, MT 59401</p>
+    <a href="tel:+14064531821">(406) 453-1821</a>
+  </div>
+</header>
+{% schema %}
+{
+  "name": "Jacks Pet Center header",
+  "settings": []
+}
+{% endschema %}

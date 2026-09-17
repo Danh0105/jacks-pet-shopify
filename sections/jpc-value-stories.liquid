@@ -1,0 +1,57 @@
+<section class="jpc-value-stories jpc-value-stories--marquee">
+  <div class="jpc-value-stories__heading">
+    <div class="jpc-container jpc-value-stories__heading-inner">
+      <p class="jpc-eyebrow">Pet parent perspective</p>
+      <h2><span>{{ section.settings.heading_primary }}</span><span>{{ section.settings.heading_secondary }}</span></h2>
+      <p>{{ section.settings.description }}</p>
+    </div>
+  </div>
+  <div class="jpc-marquee" aria-label="What pet parents value">
+    {% assign first_row = section.blocks %}
+    {% assign second_row = section.blocks | reverse %}
+    <div class="jpc-marquee__row jpc-marquee__row--left">
+      {% for repeat in (1..2) %}
+        {% for block in first_row %}
+          <article class="jpc-value-card" {{ block.shopify_attributes }}>
+            <div class="jpc-value-card__top"><span class="jpc-value-card__avatar"><img src="{{ 'jpc-avatar-' | append: block.settings.initials | append: '.jpg' | asset_url }}" alt="" loading="lazy"></span><div><h3>{{ block.settings.title }}</h3><p>{{ block.settings.label }}</p></div></div>
+            <blockquote>{{ block.settings.quote }}</blockquote>
+          </article>
+        {% endfor %}
+      {% endfor %}
+    </div>
+    <div class="jpc-marquee__row jpc-marquee__row--right">
+      {% for repeat in (1..2) %}
+        {% for block in second_row %}
+          <article class="jpc-value-card" {{ block.shopify_attributes }}>
+            <div class="jpc-value-card__top"><span class="jpc-value-card__avatar"><img src="{{ 'jpc-avatar-' | append: block.settings.initials | append: '.jpg' | asset_url }}" alt="" loading="lazy"></span><div><h3>{{ block.settings.title }}</h3><p>{{ block.settings.label }}</p></div></div>
+            <blockquote>{{ block.settings.quote }}</blockquote>
+          </article>
+        {% endfor %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name":"Pet parent value marquee",
+  "settings":[
+    {"type":"text","id":"heading_primary","label":"Heading line 1","default":"What Pet Parents"},
+    {"type":"text","id":"heading_secondary","label":"Heading line 2","default":"Value Most"},
+    {"type":"textarea","id":"description","label":"Description","default":"Thoughtful supplies, clear information, and a customer experience built around everyday pet care."}
+  ],
+  "blocks":[{"type":"story","name":"Value card","settings":[
+    {"type":"text","id":"initials","label":"Avatar initials","default":"01"},
+    {"type":"text","id":"title","label":"Card title","default":"Clear product details"},
+    {"type":"text","id":"label","label":"Card label","default":"A better shopping experience"},
+    {"type":"textarea","id":"quote","label":"Card copy","default":"We aim to make it easier to understand your options and choose supplies that fit your pet’s routine."}
+  ]}],
+  "presets":[{"name":"What Pet Parents Value","blocks":[
+    {"type":"story","settings":{"initials":"01","title":"Clear product details","label":"A better shopping experience","quote":"We aim to make it easier to understand your options and choose supplies that fit your pet’s routine."}},
+    {"type":"story","settings":{"initials":"02","title":"Practical essentials","label":"Built for everyday care","quote":"Useful products and straightforward guidance can make everyday pet care feel less complicated."}},
+    {"type":"story","settings":{"initials":"03","title":"Local connection","label":"Great Falls, Montana","quote":"Our goal is to keep pet care personal, approachable, and connected to the community we serve."}},
+    {"type":"story","settings":{"initials":"04","title":"Support when you need it","label":"Here to help","quote":"Questions about an order, product, or policy are welcome—our support team is ready to help."}},
+    {"type":"story","settings":{"initials":"05","title":"Clear delivery expectations","label":"Shop with confidence","quote":"We publish shipping information clearly so you know what to expect before checkout."}},
+    {"type":"story","settings":{"initials":"06","title":"Responsible care","label":"Pets come first","quote":"We encourage thoughtful product choices and recommend qualified veterinary care for health concerns."}}
+  ]}]
+}
+{% endschema %}

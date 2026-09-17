@@ -1,0 +1,68 @@
+<footer class="jpc-footer">
+  <div class="jpc-container">
+    <div class="jpc-footer__cta">
+      <div>
+        <p class="jpc-eyebrow">Have a question?</p>
+        <h2>Talk with our team before an important pet-care decision.</h2>
+        <p class="jpc-footer__contact-line">508 Central Ave, Great Falls, MT 59401</p>
+        <p class="jpc-footer__contact-line"><a href="tel:+14064531821">(406) 453-1821</a></p>
+      </div>
+      <a class="jpc-button jpc-button--gold" href="/pages/contact">Contact us <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="jpc-footer__grid">
+      <div class="jpc-footer__brand">
+        <a href="{{ routes.root_url }}" class="jpc-footer__logo"><img src="{{ 'jacks-pet-center-logo.png' | asset_url }}" alt="Jack’s Pet Center" width="300" height="169"></a>
+        <p>Local pet care, supplies, and practical guidance for Great Falls, Montana.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <a href="{{ routes.root_url }}">Home</a>
+        <a href="/pages/about">About Us</a>
+        <a href="{{ routes.all_products_collection_url }}">Shop</a>
+        <a href="/pages/contact">Contact</a>
+        <a href="/pages/faq">FAQ</a>
+      </div>
+      <div>
+        <h3>Visit Us</h3>
+        <p>508 Central Ave<br>Great Falls, MT 59401</p>
+        <p><a href="tel:+14064531821">(406) 453-1821</a></p>
+        <a href="https://www.google.com/maps/search/?api=1&query=508+Central+Ave+Great+Falls+MT+59401" target="_blank" rel="noopener">Get directions ↗</a>
+      </div>
+      <div class="jpc-footer__policies">
+        <h3>Customer Service</h3>
+        <a href="/policies/shipping-policy">Shipping Policy</a>
+        <a href="/policies/refund-policy">Return &amp; Refund Policy</a>
+        <a href="/policies/privacy-policy">Privacy Policy</a>
+        <a href="/policies/terms-of-service">Terms of Service</a>
+        <a href="/policies/contact-information">Contact Information</a>
+        <a href="/policies/legal-notice">Legal Notice</a>
+      </div>
+      <div>
+        <h3>Stay connected</h3>
+        <p>Receive local pet-care notes and store updates.</p>
+        {% form 'customer', class: 'jpc-newsletter-form' %}
+          <input type="hidden" name="contact[tags]" value="newsletter">
+          <label class="visually-hidden" for="JpcFooterEmail">Email address</label>
+          <input id="JpcFooterEmail" type="email" name="contact[email]" placeholder="Email address" required>
+          <button type="submit">Sign up</button>
+        {% endform %}
+      </div>
+    </div>
+    <div class="jpc-footer__legal">
+      <span>© {{ 'now' | date: '%Y' }} Jacks Pet Center</span>
+      <div>
+        <a href="/policies/privacy-policy">Privacy</a>
+        <a href="/policies/terms-of-service">Terms</a>
+        <a href="/policies/shipping-policy">Shipping</a>
+        <a href="/policies/refund-policy">Returns</a>
+        <a href="/policies/legal-notice">Legal Notice</a>
+      </div>
+    </div>
+  </div>
+</footer>
+{% schema %}
+{
+  "name": "Jacks Pet Center footer",
+  "settings": []
+}
+{% endschema %}
