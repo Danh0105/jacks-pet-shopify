@@ -1,10 +1,97 @@
 {% assign kind = section.settings.page_kind | default: 'generic' %}
-<section class="jpc-page">
-  <div class="jpc-page__hero"><div class="jpc-container"><p class="jpc-eyebrow">Jack’s Pet Center</p><h1>{% if kind == 'about' %}Care that starts close to home.{% elsif kind == 'contact' %}Let’s talk about your pet-care needs.{% elsif kind == 'faq' %}Questions before you shop?{% elsif kind == 'policy' %}Our store policies, clearly explained.{% else %}{{ page.title }}{% endif %}</h1></div></div>
+<section class="jpc-page{% if kind == 'about' %} jpc-page--about{% endif %}">
+  <div class="jpc-page__hero{% if kind == 'about' %} jpc-page__hero--about{% endif %}"><div class="jpc-container"><p class="jpc-eyebrow">Jack’s Pet Center</p><h1>{% if kind == 'about' %}Pet care with heart, rooted in Montana.{% elsif kind == 'contact' %}Let’s talk about your pet-care needs.{% elsif kind == 'faq' %}Questions before you shop?{% elsif kind == 'policy' %}Our store policies, clearly explained.{% else %}{{ page.title }}{% endif %}</h1>{% if kind == 'about' %}<p class="jpc-page__hero-copy">A neighborhood pet store built on practical guidance, dependable essentials, and the belief that every animal deserves thoughtful everyday care.</p>{% endif %}</div></div>
   <div class="jpc-container">
     {% if kind == 'about' %}
-      <div class="jpc-story-grid jpc-page__about-intro"><div class="jpc-story-grid__image"><img src="{{ 'jacks-pet-care-animals.jpg' | asset_url }}" alt="A dog and cat enjoying time together" loading="lazy"></div><div class="jpc-story-grid__copy"><p class="jpc-eyebrow">Our story</p><h2>A local pet store with Montana roots.</h2><p>Jack’s Pet Center is a Great Falls pet-care destination built around practical help, dependable supplies, and respect for the bond between people and their animals.</p><p>We believe shopping for your pet should feel straightforward. Our goal is to make it easier to find useful products, understand your options, and get support when you need it.</p><a class="jpc-button jpc-button--navy" href="/pages/contact">Talk with our team <span aria-hidden="true">↗</span></a></div></div>
-      <div class="jpc-page__content"><h2>Our mission</h2><p>Our mission is to support everyday pet care with clear information, thoughtful product choices, and a customer experience that feels personal and dependable.</p><h2>What we value</h2><p><strong>Practical guidance.</strong> We aim to explain products in a way that helps customers make informed decisions.</p><p><strong>Responsible care.</strong> Pet products are only one part of a healthy routine. When an animal is ill or injured, qualified veterinary care should come first.</p><p><strong>Local connection.</strong> We are proud to serve customers in Great Falls and throughout the United States through our online store.</p><h2>Our commitment</h2><p>We work to present products, prices, shipping terms, return terms, and contact information accurately. If something is unclear, our support team is available at <a href="mailto:support@jackspetcenter.com">support@jackspetcenter.com</a> or <a href="tel:+14064531821">(406) 453-1821</a>.</p></div>
+      <div class="jpc-about">
+        <div class="jpc-about__row jpc-about__row--mission">
+          <div class="jpc-about__brand" aria-hidden="true">
+            <span class="jpc-about__brand-ring"></span>
+            <img src="{{ 'jacks-pet-center-logo.png' | asset_url }}" alt="" width="560" height="315" loading="eager">
+          </div>
+          <div class="jpc-about__copy">
+            <p class="jpc-eyebrow">Why we are here</p>
+            <h2>Our mission</h2>
+            <p>Our mission is to make everyday pet care feel clearer, more personal, and more dependable. We pair useful products with honest information so every pet parent can choose with confidence.</p>
+            <p>From our home in Great Falls, we serve our local community and pet lovers across the United States with the same neighborly care.</p>
+          </div>
+        </div>
+
+        <div class="jpc-about__row jpc-about__row--offer">
+          <div class="jpc-about__copy">
+            <p class="jpc-eyebrow">Made for real routines</p>
+            <h2>What we offer</h2>
+            <p>A considered collection of essentials for the everyday moments that keep pets healthy, comfortable, and happy.</p>
+            <dl class="jpc-about__offer-list">
+              <div><dt>Dog supplies</dt><dd>Food, treats, leashes, beds, and everyday essentials for dogs of every size.</dd></div>
+              <div><dt>Cat supplies</dt><dd>Litter, scratchers, feeding gear, and comfort items cats actually use.</dd></div>
+              <div><dt>Food &amp; treats</dt><dd>Everyday nutrition and specialty choices for a range of needs and routines.</dd></div>
+              <div><dt>Grooming &amp; care</dt><dd>Practical tools to support healthy coats, nails, skin, and at-home care.</dd></div>
+            </dl>
+          </div>
+          <figure class="jpc-about__media">
+            <img src="{{ 'jacks-pet-supplies-flatlay.jpg' | asset_url }}" alt="Pet food, bowls, grooming tools, and a leash arranged together" width="2176" height="1632" loading="lazy">
+          </figure>
+        </div>
+
+        <div class="jpc-about__row jpc-about__row--values">
+          <figure class="jpc-about__media">
+            <img src="{{ 'jpc-trust-community.jpg' | asset_url }}" alt="A pet parent holding her small dog in the neighborhood" width="1200" height="900" loading="lazy">
+          </figure>
+          <div class="jpc-about__copy">
+            <p class="jpc-eyebrow">What guides us</p>
+            <h2>Our core values</h2>
+            <ul class="jpc-about__values-list">
+              <li><strong>Care comes first.</strong><span>Every recommendation begins with the comfort and wellbeing of the animal.</span></li>
+              <li><strong>Clarity builds trust.</strong><span>We explain products, delivery, and returns in plain language without the guesswork.</span></li>
+              <li><strong>Local means personal.</strong><span>Our Montana roots shape a warm, approachable experience—online and in store.</span></li>
+              <li><strong>Quality should be practical.</strong><span>We look for dependable essentials that make sense for real homes and real routines.</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="jpc-about__row jpc-about__row--commitment">
+          <div class="jpc-about__copy">
+            <p class="jpc-eyebrow">Here for the long run</p>
+            <h2>Our commitment to you</h2>
+            <p>Whether you are welcoming a new companion, refreshing a familiar routine, or simply trying to find a better fit, we are here to help you make a thoughtful choice.</p>
+            <p>We are committed to accurate product details, clear store policies, and support that feels human. Questions are always welcome.</p>
+            <div class="jpc-about__actions">
+              <a class="jpc-button jpc-button--navy" href="{{ routes.all_products_collection_url }}">Shop pet essentials <span aria-hidden="true">↗</span></a>
+              <a class="jpc-text-link" href="/pages/contact">Talk with our team <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+          <figure class="jpc-about__media">
+            <img src="{{ 'jacks-pet-care-animals.jpg' | asset_url }}" alt="A dog, cat, and bird relaxing together inside Jack’s Pet Center" width="2304" height="1536" loading="lazy">
+          </figure>
+        </div>
+      </div>
+
+      <div class="jpc-about-signup">
+        <div>
+          <p class="jpc-eyebrow">Stay connected</p>
+          <h2>Ready to care better together?</h2>
+          <p>Get useful pet-care notes, product updates, and local store news—sent occasionally.</p>
+        </div>
+        {% form 'customer', class: 'jpc-about-signup__form' %}
+          <input type="hidden" name="contact[tags]" value="newsletter">
+          {% if form.posted_successfully? %}<p class="jpc-about-signup__success" role="status">Thanks for joining our pet-loving community.</p>{% endif %}
+          {{ form.errors | default_errors }}
+          <label class="visually-hidden" for="JpcAboutEmail">Email address</label>
+          <input id="JpcAboutEmail" type="email" name="contact[email]" placeholder="Enter your email address" autocomplete="email" required>
+          <button type="submit">Subscribe <span aria-hidden="true">→</span></button>
+        {% endform %}
+      </div>
+
+      <div class="jpc-about-map">
+        <iframe src="https://www.google.com/maps?q=508+Central+Ave,+Great+Falls,+MT+59401&amp;output=embed" title="Jack’s Pet Center at 508 Central Avenue, Great Falls, Montana" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="jpc-about-map__card">
+          <p class="jpc-eyebrow">Come say hello</p>
+          <h2>Visit us in Great Falls</h2>
+          <p>508 Central Ave<br>Great Falls, MT 59401</p>
+          <a class="jpc-text-link" href="https://www.google.com/maps/search/?api=1&amp;query=508+Central+Ave+Great+Falls+MT+59401" target="_blank" rel="noopener">Get directions <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
     {% elsif kind == 'contact' %}
       <div class="jpc-contact-grid"><div class="jpc-contact-card"><p class="jpc-eyebrow">Get in touch</p><h2>We’re here to help.</h2><p>Contact us with questions about products, orders, shipping, returns, payments, or store information.</p><p><strong>Address</strong><br>508 Central Ave<br>Great Falls, MT 59401<br>United States</p><p><strong>Phone</strong><br><a href="tel:+14064531821">(406) 453-1821</a></p><p><strong>Email</strong><br><a href="mailto:support@jackspetcenter.com">support@jackspetcenter.com</a></p><p><strong>Support hours</strong><br>Monday–Sunday, 12:00 a.m.–6:00 p.m. Mountain Time</p></div><div><h2>Send us a message</h2>{% form 'contact', class: 'jpc-contact-form' %}{% if form.posted_successfully? %}<p class="form-success">Thanks. Your message has been sent.</p>{% endif %}{{ form.errors | default_errors }}<div><label for="JpcContactName">Name</label><input id="JpcContactName" type="text" name="contact[name]" required></div><div><label for="JpcContactEmail">Email</label><input id="JpcContactEmail" type="email" name="contact[email]" required></div><div><label for="JpcContactPhone">Phone (optional)</label><input id="JpcContactPhone" type="tel" name="contact[phone]"></div><div><label for="JpcContactMessage">Message</label><textarea id="JpcContactMessage" name="contact[body]" required></textarea></div><button class="jpc-button jpc-button--navy" type="submit">Send message <span aria-hidden="true">↗</span></button>{% endform %}</div></div>
     {% elsif kind == 'faq' %}
